@@ -9,7 +9,7 @@ locals {
 
   client_safe  = upper(var.client)
   project_safe = upper(var.project)
-  region_safe  = lookup(local.regions, var.geozone, "-What-")
+  region_safe  = lookup(local.regions, var.location, "-What-")
   budget_safe  = upper(var.budget)
 
   tags = {
